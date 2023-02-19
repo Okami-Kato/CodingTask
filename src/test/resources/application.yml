@@ -1,9 +1,4 @@
 spring:
-  datasource:
-    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
-    url: jdbc:tc:postgresql:13:///
-    username: ${POSTGRESQL_USER:root}
-    password: ${POSTGRESQL_PASSWORD:root}
   liquibase:
     enabled: true
     change-log: classpath:liquibase/master.xml
